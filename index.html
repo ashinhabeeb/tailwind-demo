@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body class="bg-gradient-to-b from-gray-900 via-purple-900 to-violet-600 text-white">
+
+    <div class="min-h-screen px-6 py-3 flex flex-col gap-10 md:px-10 lg:px-16 lg:py-7">
+
+        <header class="flex justify-between">
+            <a href="" class="flex items-center">
+                <h1 class="font-bold text-4xl">WFA.</h1>
+            </a>
+            <ul class="hidden lg:flex lg:items-center lg:gap-10 lg:font-medium">
+                <li><a href="">Locations</a></li>
+                <li><a href="">Offerings</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+            <div class="hidden lg:flex lg:items-center lg:gap-10 lg:font-medium">
+                <a href="">Login</a>
+                <button class="bg-purple-900 rounded-md font-medium px-2 py-1">Register</button>
+            </div>
+            <div class="pt-1 lg:hidden">
+                <i class="fa-2x fa-solid fa-bars"></i>
+            </div>
+        </header>
+
+        <main class="lg:flex">
+            <div class="flex items-center justify-center lg:justify-end lg:flex-1 lg:order-2">
+                <img src="./images/view-3d-woman-using-laptop.jpg" alt="" class="outline outline-1 outline-white shadow-2xl shadow-black lg:h-[500px] lg:w-[500px] lg:rounded-full image-transform">
+            </div>
+
+            <div class="space-y-6 mt-16 lg:flex-1 lg:order-1 para-transform">
+                <div class="font-bold leading-tight text-7xl ">
+                    <h1>Let's Switch</h1>
+                    <h1>To Remote</h1>
+                </div>
+                    <p>WFA provides top notch office spaces in prime locations world wide allowing people to work from anywhere.We provide coworking spaces where people from various backgrounds like remote workers,entrepreneurs,freelancers and startup enthusiasts can work,connect and grow their business.</p>
+                    <form action="" class="flex flex-col gap-4  md:flex-row md:gap-0">
+                        <input type="text" placeholder="Enter City" id="" class="max-md:rounded-md md:rounded-l-md px-4 py-3 text-black md:w-80">
+                        <button class=" bg-purple-900 max-md:rounded-md md:rounded-r-md px-4 py-3 font-medium whitespace-nowrap">Find Your Office</button>
+                    </form>
+
+                    <div class="flex flex-col gap-4 py-8">
+                        <p class="font-semibold">Used by these companies :</p>
+                        <ul class="flex gap-6">
+                            <li><i class="fa-brands fa-twitter fa-2x"></i></li>
+                            <li><i class="fa-brands fa-airbnb fa-2x"></i></li>
+                            <li><i class="fa-brands fa-apple fa-2x"></i></li>
+                            <li><i class="fa-brands fa-microsoft fa-2x"></i></li>
+                        </ul>
+                    </div>
+            </div>
+
+        </main>
+
+    </div>
+
+    <script>
+        const scroll = ScrollReveal({
+            reset:true,
+            duration:2600,
+            distance:"60px"
+        })
+        scroll.reveal('.image-transform',{delay:400,origin:'top'})
+        scroll.reveal('.para-transform',{delay:300,origin:'left'})
+    </script>
+</body>
+</html>
